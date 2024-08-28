@@ -1,0 +1,11 @@
+## Interface: 110002
+## Version: 1.0.0
+## Title: Made by Osert: Options
+## Notes: Базовая модификация управления параметрами
+## Author: Osert
+
+
+OptionsTree/OptionsTree.xml
+OptionsTree/OptionsTree.lua
+
+Main.lua
