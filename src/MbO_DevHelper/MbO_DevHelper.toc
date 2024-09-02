@@ -3,7 +3,7 @@
 ## Title: Made by Osert: DevHelper
 ## Notes: Набор вспомогательных утилит для разработки
 ## Author: Osert
-
+## Dependencies: MbO_Options
 
 OptionsPage/OptionsPage.xml
 OptionsPage/OptionsPage.lua
