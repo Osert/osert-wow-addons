@@ -1,4 +1,0 @@
-## Interface: 110002
-## Title: Made by Osert: Coordinates
-## Notes: Модификация для отображения координат на карте
-## Author: Osert

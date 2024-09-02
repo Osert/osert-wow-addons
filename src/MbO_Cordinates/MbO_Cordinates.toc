@@ -1,0 +1,7 @@
+## Interface: 110002
+## Title: Made by Osert: Coordinates
+## Notes: Модификация для отображения координат персонажа
+## Author: Osert
+## Dependencies: MbO_Coordinates
+
+Main.lua
