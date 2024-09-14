@@ -2,7 +2,6 @@
 ## Title: Made by Osert: Coordinates
 ## Notes: Модификация для отображения координат персонажа
 ## Author: Osert
-## Dependencies: MbO_Options
 
 
 3.Widgets/MinimapCoordinatesBar/MinimapCoordinatesBar.lua
@@ -10,5 +9,3 @@
 
 3.Widgets/WorldMapCoordinatesBar/WorldMapCoordinatesBar.lua
 3.Widgets/WorldMapCoordinatesBar/WorldMapCoordinatesBar.xml
-
-6.Addon/Addon.lua
