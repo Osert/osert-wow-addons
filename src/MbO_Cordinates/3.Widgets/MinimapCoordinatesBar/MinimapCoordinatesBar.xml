@@ -51,7 +51,7 @@
             </Frame>
         </Frames>        
         <Scripts>
-            <OnUpdate method="onUpdate" />
+            <OnLoad method="onLoad" />            
         </Scripts>
     </Frame>
 </Ui>
