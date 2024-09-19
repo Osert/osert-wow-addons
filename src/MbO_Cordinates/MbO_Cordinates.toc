@@ -4,6 +4,8 @@
 ## Author: Osert
 
 
+2.Features/PositionsMonitor.lua
+
 3.Widgets/MinimapCoordinatesBar/MinimapCoordinatesBar.lua
 3.Widgets/MinimapCoordinatesBar/MinimapCoordinatesBar.xml
 
