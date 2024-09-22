@@ -4,10 +4,10 @@
 ## Author: Osert
 
 
-2.Features/PositionsMonitor.lua
-
 3.Widgets/MinimapCoordinatesBar/MinimapCoordinatesBar.lua
 3.Widgets/MinimapCoordinatesBar/MinimapCoordinatesBar.xml
 
 3.Widgets/WorldMapCoordinatesBar/WorldMapCoordinatesBar.lua
 3.Widgets/WorldMapCoordinatesBar/WorldMapCoordinatesBar.xml
+
+6.Addon/Addon.lua
