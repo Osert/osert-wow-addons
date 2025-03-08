@@ -1,8 +1,10 @@
-## Interface: 110002
+## Interface: 110100
 ## Title: Made by Osert: Coordinates
 ## Notes: Модификация для отображения координат персонажа
 ## Author: Osert
 
+
+2.Features/Commands/Way.lua
 
 3.Widgets/MinimapCoordinatesBar/MinimapCoordinatesBar.lua
 3.Widgets/MinimapCoordinatesBar/MinimapCoordinatesBar.xml
