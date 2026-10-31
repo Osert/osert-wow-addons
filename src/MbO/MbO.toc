@@ -1,0 +1,11 @@
+## Interface: 120001
+## Version: 1.0.0
+## Title: Made by Osert
+## Notes: Базовая модификация
+## Author: Osert
+
+
+3.Widgets/SettingsPage/SettingsPage.xml
+3.Widgets/SettingsPage/SettingsPage.lua
+
+6.Addon/Addon.lua

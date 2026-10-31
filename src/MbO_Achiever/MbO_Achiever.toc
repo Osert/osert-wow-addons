@@ -1,0 +1,8 @@
+## Interface: 120001
+## Title: Made by Osert: Achiever
+## Notes: Модификация дополнительных функций работы с достижениями
+## Author: Osert
+## Dependencies: MbO
+
+
+6.Addon/Addon.lua
