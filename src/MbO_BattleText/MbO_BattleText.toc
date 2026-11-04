@@ -1,6 +1,7 @@
-## Interface: 110100
+## Interface: 120105
 ## Title: Made by Osert: Battle Text
 ## Notes: Модификация для отображения урона/исцеления
 ## Author: Osert
+## Dependencies: MbO
 
 6.Addon/Addon.lua

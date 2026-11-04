@@ -1,11 +1,12 @@
-## Interface: 110002
+## Interface: 120105
 ## Version: 1.0.0
 ## Title: Made by Osert: DevHelper
 ## Notes: Набор вспомогательных утилит для разработки
 ## Author: Osert
-## Dependencies: MbO_Options
+## Dependencies: MbO
 
-OptionsPage/OptionsPage.xml
-OptionsPage/OptionsPage.lua
 
-Main.lua
+3.Widgets/SettingsPage/SettingsPage.xml
+3.Widgets/SettingsPage/SettingsPage.lua
+
+6.Addon/Addon.lua

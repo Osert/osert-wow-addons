@@ -28,7 +28,7 @@ local function wayCommandHandler(msg, editBox)
             C_Map.SetUserWaypoint(mapPoint);
             C_SuperTrack.SetSuperTrackedUserWaypoint(true);
         else
-            print("Cannot set waypoints on this map")
+            print("Нельзя установить точку на карте")
         end
     end
 end
@@ -37,21 +37,40 @@ end
 -- Разбор аргументов команды
 --
 function WayCommandHelper:_parseCommnandArguments(args)
-    local mapId, xPos, yPos = nil, nil, nil;
 
-    local tokens = {};
-    for token in args:gmatch("%S+") do
-        table.insert(tokens, token);
+    if not args or args == "" then
+        print(string.format("Команда [%s]: неверный формат", args));
+        return;
     end
 
-    for _, token in pairs(tokens) do
-        if mapId == nil and token:match("#%d+") ~= nil then        -- Проверка, что токен является идентификатором локации
-            mapId = tonumber(token:match("%d+"));
-        elseif xPos == nil and token:match("%d+%.*%d") ~= nil then -- Проверка, что токен является координатой X
-            xPos = tonumber(token);
-        elseif yPos == nil and token:match("%d+%.*%d") ~= nil then -- Проверка, что токен является координатой Y
-            yPos = tonumber(token);
-        end
+    -- Ищем пару координат
+    -- Сначала пробуем формат с запятой: "x, y" или "x,y"
+    local xPos, yPos = args:match("(%d+%.?%d*)%s*,%s*(%d+%.?%d*)");
+    
+    -- Если не нашли, пробуем формат с пробелом: "x y"
+    if not xPos then
+        xPos, yPos = args:match("(%d+%.?%d*)%s+(%d+%.?%d*)");
+    end
+    
+    if not xPos then
+        print(string.format("Команда [%s]: координаты не найдены", args));
+        return;
+    end
+    
+    xPos = tonumber(xPos);
+    yPos = tonumber(yPos);
+    
+    -- Находим позиции чисел в строке для извлечения префикса
+    local _, pos = args:find("%d+%.?%d*");
+    
+    -- Извлекаем часть до координат (с обрезкой пробелов)
+    local prefix = args:sub(1, pos - 1):match("^%s*(.-)%s*$");
+    
+    -- Определяем наличие ID зоны в префиксе
+    local mapId = nil;
+    
+    if prefix:match("^#%d+$") then
+        mapId = tonumber(prefix:match("^#(%d+)$"));
     end
 
     return mapId, xPos, yPos;
